@@ -6,7 +6,7 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <>
-    <div className="h-[90vh] w-full bg-[#D0D4D5] rounded-xl shadow-xl p-2">
+    <div className="h-[100%] w-[100%] bg-[#D0D4D5] rounded-xl shadow-xl p-2">
     <NavBar/>
     <Home/>
     {/* <Footer/> */}

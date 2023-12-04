@@ -1,20 +1,18 @@
 import React from 'react'
 
 function Cards({
-    img,
-    text1,
-    text2
+  img,
+  text1,
+  text2
 }) {
   return (
-    <div className='bg-white h-[95%] w-[300px] rounded-xl overflow-hidden inline-block me-4' style={{boxShadow:"1px 1px 4px black"}}>
-        <div className='h-[80%] w-[100%] '>
-            <img className='h-[100%] w-[100%] object-cover' src={img} alt="" />
-        </div>
-        <div className='flex items-end flex-col mt-4'>
-            <p className='bg-[#000612] text-white py-2 px-4 rounded-lg rounded-br-none text-sm'>{text1}</p>
-            <p className='bg-gray-300 py-2 px-6 rounded-lg rounded-tr-none text-sm font-semibold'>{text2}</p>
-        </div>
+    <>
+    <div className='relative w-[250px] md:w-[300px] h-full bg-white rounded-lg inline-block me-4 overflow-hidden' style={{boxShadow:"1px 1px 4px black"}}>
+        <img src={img} alt="" className='absolute h-[50%] w-full object-cover top-[7%]'/>
+        <h4 className='absolute bottom-[10%] right-0 bg-black text-white py-[12px] px-[24px] rounded-lg rounded-br-none font-semibold text-sm'>{text1}</h4>
+        <h5 className='absolute bottom-0 right-0 bg-[#D0D4D5] py-[12px] px-[30px] rounded-lg rounded-tr-none text-sm'>{text2}</h5>
     </div>
+    </>
   )
 }
 
