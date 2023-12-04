@@ -1,6 +1,6 @@
 import React from 'react'
-import 'remixicon/fonts/remixicon.css'
-import logo from '../../public/icons8-nike-50.png'
+import 'remixicon/fonts/remixicon.css';
+import logo from '../assets/logo.png';
 
 function NavBar() {
   return (
